@@ -20,7 +20,8 @@ public class Register {
     }
 
     @Given("^Enter an url$")
-    public void enter_an_url()  {
+    public void enter_an_url()
+    {
         driver.get("https://demo.nopcommerce.com/");
     }
 
@@ -38,6 +39,7 @@ public class Register {
 
     @Then("^user select a gender$")
     public void user_select_a_gender()  {
+
         driver.findElement(By.id("gender-male")).click();
     }
 
